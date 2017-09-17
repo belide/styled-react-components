@@ -3,6 +3,7 @@ import './App.css';
 import ActionButton from "./Components/ActionButton.js"; 
 import EventSnippet from "./Components/EventSnippet.js"; 
 import SearchBar from "./Components/SearchBar.js"; 
+// import ImageCard from "./Components/ImageCard.js"; 
 
 class App extends Component {
 
