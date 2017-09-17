@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ActionButton from "./Components/ActionButton.js"; 
+import EventSnippet from "./Components/EventSnippet.js"; 
 
 class App extends Component {
 
@@ -46,13 +47,23 @@ class App extends Component {
     margin: "15px 15px",  
     height: 40,  
     outline: "none", 
-    backgroundColor: "red",
-    border: "1px solid white", 
+    backgroundColor: "white",
+    border: "1px solid", 
     padding: 10, 
-    color: "white",
+    color: "black",
     fontSize:10, 
     fontWeight: "bold", 
     letterSpacing: 1
+  }
+
+  const eventSnippetOne = {
+    heading: "Flavors Culinary Programs", 
+    description: "Support the American Liver Foundation by dining at a 'Flavors' event near you"
+  }
+
+  const eventSnippetTwo ={
+    heading: "Liver Life Walk", 
+    description: "Raise money and walk to support the American Liver Foundation. Find a walk near you"
   }
 
 
@@ -60,10 +71,17 @@ class App extends Component {
 
     return (
       <div className="app">
+      
+        <h2 className="header">ActionButton</h2>
         <ActionButton/>
         <ActionButton style={greyButton}/>
         <ActionButton value ="LETS GO!" style={redButton}/>
         <ActionButton value ="Oh Yeah!" style={borderButton}/>
+
+        <h2 className="header">EventSnippet</h2>
+        <EventSnippet heading={eventSnippetOne.heading} description={eventSnippetOne.description}/>
+        <EventSnippet heading={eventSnippetTwo.heading} description={eventSnippetTwo.description}/>
+
       </div>
       )
   }

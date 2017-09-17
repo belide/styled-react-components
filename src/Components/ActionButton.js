@@ -50,10 +50,9 @@ const ActionButton = (props) => {
 export default ActionButton; 
 
 
-// props.style> this is the style object
-// props.value> this is the call to action value
-
-
-
-
+//Homework for ActionButton Component
+//for creating a hover effect on button use an external style sheet or 
+//styled component library such as MaterialUI or Radium or write functional
+//mixins to manage state change and returning a new style object on mouse over
+//event
 
